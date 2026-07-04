@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎂 Birthday Surprise 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <!-- PAGE 1: LOADING SCREEN -->
+  <div class="page active" id="page-loading">
+    <div class="floating-shapes" id="loading-shapes"></div>
+    <div class="loading-content">
+      <div class="loading-emoji">🎂</div>
+      <h1 class="loading-title">Loading Your Birthday Surprise...</h1>
+      <div class="progress-ring-wrap">
+        <svg class="progress-ring" viewBox="0 0 100 100" width="120" height="120">
+          <circle class="ring-bg" cx="50" cy="50" r="42" />
+          <circle class="ring-fill" cx="50" cy="50" r="42" id="ring-fill" />
+        </svg>
+        <div class="ring-emoji">✨</div>
+      </div>
+      <p class="loading-sub">Get ready for something magical…</p>
+    </div>
+  </div>
+ 
+  <!-- PAGE 2: BIRTHDAY WISHES -->
+  <div class="page" id="page-wishes">
+    <div class="confetti-container" id="confetti-wishes"></div>
+    <div class="floating-shapes" id="wishes-shapes"></div>
+    <div class="wishes-content">
+      <h1 class="wishes-title">🎉 Happy Birthday To My Bosom Buddy 🎉</h1>
+      <p class="wishes-subtitle">You Are Truly Special 💖</p>
+      <div class="photo-frame">
+        <div class="photo-inner">
+          <span class="photo-emoji">👫</span>
+        </div>
+      </div>
+      <button class="btn-glow" id="btn-gift">Open Your Gift 🎁</button>
+    </div>
+  </div>
+ 
+  <!-- PAGE 3: GIFT MESSAGE -->
+  <div class="page" id="page-gift">
+    <div class="floating-shapes" id="gift-shapes"></div>
+    <div class="gift-content">
+      <div class="gift-header">🎁 A Gift From The Heart 🎁</div>
+      <div class="quote-card" id="quote-card-1">
+        <div class="quote-icon">💌</div>
+        <p class="quote-text" id="quote-text-1"></p>
+      </div>
+      <div class="quote-card hidden" id="quote-card-2">
+        <div class="quote-icon">✨</div>
+        <p class="quote-text" id="quote-text-2"></p>
+      </div>
+      <button class="btn-glow hidden" id="btn-continue">Continue ➜</button>
+    </div>
+  </div>
+ 
+  <!-- PAGE 4: BALLOON GAME -->
+  <div class="page" id="page-balloons">
+    <div class="floating-shapes" id="balloon-shapes"></div>
+    <div class="balloon-game-header">
+      <h2>🎈 Pop the Balloons! 🎈</h2>
+      <p>Each balloon holds a special surprise for you!</p>
+    </div>
+    <div class="balloons-arena" id="balloons-arena"></div>
+    <div class="quote-reveal hidden" id="quote-reveal">
+      <div class="quote-reveal-text" id="quote-reveal-text"></div>
+    </div>
+    <button class="btn-glow hidden" id="btn-final">Final Surprise 🎁</button>
+  </div>
+ 
+  <!-- PAGE 5: FINAL MESSAGE -->
+  <div class="page" id="page-final">
+    <div class="confetti-container" id="confetti-final"></div>
+    <div class="fireworks" id="fireworks"></div>
+    <div class="floating-shapes" id="final-shapes"></div>
+    <div class="final-content">
+      <h1 class="final-heading">A Special Message For You ❤️</h1>
+      <div class="final-message-box">
+        <p class="final-message">
+          Thanks for being my Google,Therapist,GPS&Bodyguard 😎. All in One Package 🎁<br/>
+          May this year bring you endless happiness,<br/>
+          success, love, and beautiful memories.<br/>
+          Enjoy your special day and keep smiling always.<br/><br/>
+          <strong>Happy Birthday to the Legend who is crazy like me 😜,
+            Lets make more memories & more pagalpan together 🎂🎉✨💖</strong>
+        </p>
+      </div>
+      <div class="final-emojis">
+        <span>🎂</span><span>🎉</span><span>🎈</span>
+        <span>🎁</span><span>✨</span><span>💖</span>
+        <span>🌸</span><span>🦋</span><span>⭐</span>
+      </div>
+      <div class="made-with-love">Made with Love ❤️</div>
+    </div>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
